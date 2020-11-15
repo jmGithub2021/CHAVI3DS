@@ -1,0 +1,30 @@
+{
+	"projectid":"TMC20190003",
+	
+	"default":[
+		{"anatomicsite":["Head-Neck","diagnosis"]},
+		{"radiotherapy_intent":["Curative","radiotherapy"]}
+		],
+
+	"valuesmap":{
+		"co_morbidities___1":{"comorbidity_type":[["1","0"],["Hypertension",""]]},
+		"co_morbidities___2":{"comorbidity_type":[["1","0"],["Diabetes",""]]},
+		"co_morbidities___3":{"comorbidity_type":[["1","0"],["Ischemic Heart Disease",""]]},
+		"co_morbidities___4":{"comorbidity_type":[["1","0"],["Chronic renal disease",""]]},
+		"co_morbidities___5":{"comorbidity_type":[["1","0"],["Altered Hepatic Function",""]]},
+		"co_morbidities___6":{"comorbidity_type":[["1","0"],["COPD",""]]},
+		"performance_status":{"performance_status":[["0","1","2","3","4","5"],["0","1","2","3","4","5"]]},
+		"alcohol":{"substance_used":[["1","2","3"],["Alcohol","",""]]},
+		"smoking":{"substance_used":[["1","2","3"],["smoking","",""]]},
+		"ihc_result":{"ihc_result":[["1","2"],["Positive","Negative"]]},
+		"t_stage":{"tstage":[["1","2","3","4","5","6","7"],["1a","1b","2","3","4a","4b","x"]]},
+		"n_stage":{"nstage":[["1","2","3","4","5","6","7"],["x","0","1","2a","2b","2c","3"]]},
+		"conc_chemo":{"concurrentchemotherapy":[["1","2"],["1","0"]]},
+		"mon3_lr":{"responselocation":[["1","2"],["Local",""]]},
+		"mon3_rr":{"responselocation":[["1","2"],["Regional",""]]},
+		"mon3_dm":{"responselocation":[["1","2"],["Distant",""]]},
+		"mon3_death":{"status":[["1","2"],["Dead","Alive"]]}
+	}
+
+}
+

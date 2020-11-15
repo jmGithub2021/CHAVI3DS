@@ -1,0 +1,30 @@
+{
+	"projectid":"TMC20190001",
+	
+	"mandatory":{"overallstage":["Not applicable","stageinformation"]},
+	
+	"default":[{"chemotherapysetting":["Adjuvant","chemotherapy"]},{"anatomicsite":["1","diagnosis"]},{"diagnosis_site":["brain","diagnosis"]}],
+	
+	"valuesmap":{
+		"gender":{"gender":[["1","2"],["MALE","FEMALE"]]},
+		"performance_status":{"performance_status":[["0","1","2","3","4"],["0","1","2","3","4"]]},
+		"diffuse_astrocytic_and_oligodendroglial_tumours":{"pathology":[["1","2","3","4","5","6"],["Anaplastic astrocytoma, IDH-mutant "," Anaplastic astrocytoma, IDH-wildtype ","Anaplastic astrocytoma, NOS ","Glioblastoma, IDH-wildtype ","Glioblastoma, IDH-mutant ","Glioblastoma, NOS"]]},
+		"mri_timing":{"imaging_timing":[["1","2","3","4","5","6","7"],["Baseline","Post primary surgery","Pre-chemotherapy","Interim during adjuvant chemotherapy","End of treatment","Followup","Post re-do surgery"]]},
+		"rt_used_or_not":{"radiotherapy_given":[["1","2","3"],["Yes","No","Not Known"]]},
+		"steroids_during_rt":{"concurrentmedication":[["1","2","3"],["Yes","No","Not Known"]]},	
+		"steroids_during_re_rt":{"concurrentmedication":[["1","2","3"],["Yes","No","Not Known"]]},	
+		"edema":{"edema":[["1","2"],["1","0"]]},
+		"svz":{"svz":[["1","2"],["1","0"]]},
+		"midline":{"midline":[["1","2"],["1","0"]]},
+		"callosum":{"callosum":[["1","2"],["1","0"]]},
+		"mri_disease_status":{"disease_status_img":[["1","2","3","4","5","6","7","8","9","10"],["Gross total resection","Subtotal resection","No evidence of disease","Stable disease","Pseudoprogression","Partial response","Progressive disease","Recurrent disease","Any other","Baseline"]]},
+		"re_rt_used_or_not":{"is_reiradiation":[["1","2","3"],["Yes","No","Not known"]]},
+		"enhancement":{"enhancement":[["1","2"],["1","0"]]},
+		"conc_tmz":{"concurrentchemotherapy":[["1","2","3","4"],["TMZ","No","Not applicable","Not known"]]},
+		"conc_tmz_re_rt":{"concurrentchemotherapy":[["1","2","3","4"],["TMZ","No","Not applicable","Not known"]]},
+		"status_lastfu":{"status":[["1","2"],["Alive","Dead"]]},
+		"disease_last_followup":{"recurrencetype":[["1","2","3","4","5","6"],["NED","Stable Residual Disease","Progressive Disease","Second Malignancy","Newly Diagnosed for Opinion","On treatment"]]},
+		"expression_result":{"expression_result":[["1","2","3","4","5","6"],["Wildtype","Mutated","MGMT, methylated","Retained","Lost","Not known"]]}
+	}
+}
+

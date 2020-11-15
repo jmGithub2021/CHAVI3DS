@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserHome.MapPatientProjectController">
+   <children>
+      <TextField fx:id="patientId" layoutX="14.0" layoutY="78.0" prefHeight="31.0" prefWidth="179.0" promptText="Enter patient id" />
+      <ComboBox fx:id="projectId" layoutX="206.0" layoutY="78.0" prefHeight="31.0" prefWidth="179.0" promptText="Select Project" />
+      <Button fx:id="mapButton" layoutX="397.0" layoutY="78.0" mnemonicParsing="false" onAction="#mapButtonAction" prefHeight="31.0" prefWidth="179.0" text="Map" />
+      <Button fx:id="export" layoutX="399.0" layoutY="200.0" mnemonicParsing="false" onAction="#exportAction" prefHeight="40.0" prefWidth="179.0" text="Export Mapped Data" />
+      <Label layoutX="211.0" layoutY="29.0" text="Patient to Project Mapping">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="mappingLog" layoutX="14.0" layoutY="118.0" prefHeight="271.0" prefWidth="372.0" />
+      <Button fx:id="exportDatabase" layoutX="399.0" layoutY="346.0" mnemonicParsing="false" onAction="#exportDatabaseAction" prefHeight="40.0" prefWidth="179.0" text="Export From Database" />
+   </children>
+</AnchorPane>

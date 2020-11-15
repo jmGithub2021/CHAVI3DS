@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="404.0" prefWidth="658.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdministratorHome.AdministratorhomeController">
+    <stylesheets>
+        <URL value="@administratorhome.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="64.0" prefHeight="340.0" prefWidth="658.0">
+         <children>
+            <SplitPane fx:id="splitPane" dividerPositions="0.008875739644970414" layoutX="6.0" orientation="VERTICAL" prefHeight="340.0" prefWidth="658.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1.0" prefWidth="616.0">
+                     <children>
+                        <Label layoutX="7.0" layoutY="26.0" prefHeight="17.0" prefWidth="147.0" text="Project Name">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="projectName" layoutX="162.0" layoutY="22.0" prefHeight="25.0" prefWidth="165.0" promptText="Project short name" />
+                        <Label layoutX="7.0" layoutY="67.0" text="Project ID">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="projectID" layoutX="162.0" layoutY="63.0" prefHeight="25.0" prefWidth="165.0" promptText="Project ID" />
+                        <Label layoutX="7.0" layoutY="108.0" text="IRB Approval No">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="approvalNo" layoutX="162.0" layoutY="104.0" prefHeight="25.0" prefWidth="165.0" promptText="IRB approval number" />
+                        <Label layoutX="7.0" layoutY="149.0" text="IRB Approval date">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="190.0" text="Center List">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="centerList" layoutX="162.0" layoutY="186.0" prefHeight="25.0" prefWidth="165.0" promptText="Add list seperate by comma" />
+                        <Label layoutX="7.0" layoutY="231.0" text="Contain Animal Images">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="animalImages" layoutX="162.0" layoutY="227.0" prefHeight="25.0" prefWidth="165.0" promptText="YES/NO" />
+                        <Button fx:id="projectRegister" layoutX="477.0" layoutY="268.0" mnemonicParsing="false" onAction="#projectRegisterAction" prefHeight="25.0" prefWidth="165.0" text="Register" />
+                        <Label layoutX="342.0" layoutY="26.0" text="PI name">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="342.0" layoutY="67.0" text="Scientific Title">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="342.0" layoutY="108.0" text="Countries List">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="342.0" layoutY="149.0" text="Abstract">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="piName" layoutX="475.0" layoutY="22.0" prefHeight="25.0" prefWidth="165.0" promptText="Principle investigator name" />
+                        <TextField fx:id="scientificTitle" layoutX="475.0" layoutY="63.0" prefHeight="25.0" prefWidth="165.0" promptText="Scientific title of project" />
+                        <TextField fx:id="countriesList" layoutX="475.0" layoutY="104.0" prefHeight="25.0" prefWidth="165.0" promptText="List of coutries associated" />
+                        <TextArea fx:id="projectAbstract" layoutX="477.0" layoutY="137.0" prefHeight="113.0" prefWidth="165.0" promptText="A five thousand character abstract of the project." />
+                        <Button fx:id="back" layoutX="7.0" layoutY="268.0" mnemonicParsing="false" onAction="#backAction" prefHeight="25.0" prefWidth="151.0" text="Back" />
+                        <DatePicker fx:id="approvalDate" layoutX="162.0" layoutY="145.0" prefHeight="25.0" prefWidth="165.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="332.0" prefWidth="616.0">
+                     <children>
+                        <HBox layoutX="369.0" layoutY="2.0" prefHeight="42.0" prefWidth="280.0">
+                           <children>
+                              <Button fx:id="activate" mnemonicParsing="false" onAction="#activateAction" prefHeight="25.0" prefWidth="102.0" text="Activate">
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="deactivate" mnemonicParsing="false" onAction="#deactivateAction" prefHeight="25.0" prefWidth="100.0" text="Deactivate">
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <ComboBox fx:id="userFilterList" onAction="#userFilterListChange" prefHeight="25.0" prefWidth="100.0" promptText="All">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                           </children>
+                        </HBox>
+                        <Label layoutX="285.0" layoutY="6.0" text="User List">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="userList" layoutX="285.0" layoutY="31.0" prefHeight="287.0" prefWidth="364.0" />
+                        <AnchorPane layoutX="-1.0" layoutY="45.0" prefHeight="287.0" prefWidth="239.0">
+                           <children>
+                              <GridPane layoutX="11.0" prefHeight="251.0" prefWidth="266.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="119.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="183.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="147.0" text="Name">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="userName" promptText="User Full Name" GridPane.columnIndex="1" />
+                                    <Label text="Email id" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="userEmail" promptText="User Email id" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="Contact Number" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="userContact" promptText="User primary contact number" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="Password" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Confirm Password" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="User Type" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="userType" prefHeight="25.0" prefWidth="188.0" promptText="Select User Role" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Button fx:id="userRegister" mnemonicParsing="false" onAction="#userRegisterAction" prefHeight="25.0" prefWidth="185.0" text="Register" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <PasswordField fx:id="userPass" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <PasswordField fx:id="userCPass" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="103.0" layoutY="6.0" text="Registration">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="createProject" layoutX="139.0" layoutY="14.0" mnemonicParsing="false" onAction="#createProjectAction" prefHeight="34.0" prefWidth="122.0" text="Create Project" />
+      <Label fx:id="welcome" layoutX="14.0" layoutY="18.0" text="Welcome" />
+      <Button fx:id="exportProject" layoutX="269.0" layoutY="14.0" mnemonicParsing="false" onAction="#exportProjectAction" prefHeight="34.0" prefWidth="122.0" text="Export Project" />
+      <Button fx:id="createProjectTemplatebtn" layoutX="400.0" layoutY="14.0" mnemonicParsing="false" onAction="#createProjectTemplatebtnAction" prefHeight="34.0" prefWidth="122.0" text="Create Project Template" />
+      <Button fx:id="createCatalog" layoutX="530.0" layoutY="14.0" mnemonicParsing="false" onAction="#createCatalogAction" prefHeight="34.0" prefWidth="122.0" text="Create Catalog" />
+   </children>
+</AnchorPane>

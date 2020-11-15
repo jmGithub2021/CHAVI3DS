@@ -1,0 +1,13 @@
+{
+	"projectid":"Project ID",
+	
+	"default":[
+		{"chavi_attribute_name":["default_value","chavi_table_name"]},
+		{"chavi_attribute_name1":["default_value1","chavi_table_name"]}
+		],
+
+	"valuesmap":{
+		"csv_attribute_name": {"chavi_attribute_name":[["Expected_value_from_original_data","2","3"],["Actual_data_will_be_stored_in_CHAVI","Right","Bilateral"]]},
+		"tstage":[["0","1","2","3","4","5","6","7"],["0","1","2","3","4a","4b","4c","4d"]]
+	}
+}
