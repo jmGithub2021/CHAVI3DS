@@ -8,14 +8,14 @@ IDENTIFICATION SYSTEM</h3>
   <p align="center">
    The user manual for the step-by-step uses of CHAVID3S.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs in PDF»</strong></a>
+    <a href="#"><strong>Explore the docs in PDF»</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">Request Demo</a>
+    <a href="#">Request Demo</a>
     ·
-    <a href="[https://github.com/othneildrew/Best-README-Template/issues](https://github.com/jmGithub2021/CHAVI3DS/issues)">Report Bug</a>
+    <a href="https://github.com/jmGithub2021/CHAVI3DS/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="#">Request Feature</a>
   </p>
 </div>
 <div class="title-page">
