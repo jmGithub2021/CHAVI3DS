@@ -1,8 +1,5 @@
-# CHAVI3DS
-Software for medical imaging data bank created by IIT, Kharagpur and Tata Medical Center, Kolkata
-
-
-
+<!-- # CHAVI3DS -->
+<!-- Software for medical imaging data bank created by IIT, Kharagpur and Tata Medical Center, Kolkata -->
 
 <!-- PROJECT LOGO -->
   <h3 align="center" id="top">CHAVID3S: CHAVI DICOM DATA DE  
