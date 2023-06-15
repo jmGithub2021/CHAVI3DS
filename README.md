@@ -340,3 +340,15 @@ advanced feature analysis,” European journal of cancer, vol. 48, no. 4, pp. 44
 ## Contact
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+[product-screenshot]: image/de-identification_workflow.png
+[Java]: https://img.shields.io/badge/Java-5382a1?style=for-the-badge&logo=java&logoColor=f89820
+[Java-url]: https://www.oracle.com/in/java/technologies/downloads/
+[Mysql]: https://img.shields.io/badge/MySql-f29111?style=for-the-badge&logo=mysql&logoColor=00758f
+[Mysql-url]: https://www.mysql.com/
+[dcm4che]: https://img.shields.io/badge/dcm4che-e02f36?style=for-the-badge&logo=java&logoColor=f89820
+[dcm4che-url]: https://www.dcm4che.org/
+[Netbeans]: https://img.shields.io/badge/NetBeans-f1f3f4?style=for-the-badge&logo=apachenetbeanside&logoColor=1c7dc2
+[Netbeans-url]: https://netbeans.apache.org/
