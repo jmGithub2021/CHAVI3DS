@@ -1,3 +1,0 @@
-{"event":"java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1.2.840.113619.2.25.4.2436332.1431059541.836' for key 'PRIMARY'","user":"sk@c.com","timestamp":"27-01-2020 14:20:57"},
-{"event":"java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1.2.840.113619.2.25.4.2436332.1431059541.836' for key 'PRIMARY'","user":"sk@c.com","timestamp":"27-01-2020 14:22:09"},
-{"event":"java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1.2.840.113619.2.55.3.279720729.198.1431049674.943' for key 'PRIMARY'","user":"sk@c.com","timestamp":"27-01-2020 14:22:49"},

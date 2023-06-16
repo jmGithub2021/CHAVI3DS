@@ -1,9 +1,0 @@
-{ "name" : "DICOM Deidentification Rule",
-    "definedBy" : "CHAVI-RO TEAM",
-    "description" : "",
-    "tagList" : 	
-    [],
-	"deidentifyValue" : 
-	{
-	
-	}

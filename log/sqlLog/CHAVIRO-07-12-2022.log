@@ -1,2 +1,0 @@
-{"event":"select * from login where uid=? and pass=?","user":"sk@c.com","timestamp":"07-12-2022 19:29:00"},
-{"event":"select * from project","user":"sk@c.com","timestamp":"07-12-2022 19:29:01"},

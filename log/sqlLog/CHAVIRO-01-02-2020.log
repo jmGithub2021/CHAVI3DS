@@ -1,4 +1,0 @@
-{"event":"select * from login where uid=? and pass=?","user":"admin","timestamp":"01-02-2020 17:26:01"},
-{"event":"select * from project limit 0,400","user":"admin","timestamp":"01-02-2020 17:26:02"},
-{"event":"select * from project limit 0,400","user":"admin","timestamp":"01-02-2020 17:26:02"},
-{"event":"select * from project limit 0,400","user":"admin","timestamp":"01-02-2020 17:26:02"},

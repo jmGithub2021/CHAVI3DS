@@ -1,6 +1,0 @@
-{"event":"select * from login where uid=? and pass=?","user":"sk@c.com","timestamp":"19-02-2021 20:21:25"},
-{"event":"select * from project","user":"sk@c.com","timestamp":"19-02-2021 20:21:25"},
-{"event":"select * from login where uid=? and pass=?","user":"admin","timestamp":"19-02-2021 20:24:41"},
-{"event":"select * from login where uid=? and pass=?","user":"admin","timestamp":"19-02-2021 20:24:47"},
-{"event":"select * from project","user":"admin","timestamp":"19-02-2021 20:25:59"},
-{"event":"select attributename from projectTemplateOtherAttribute","user":"admin","timestamp":"19-02-2021 20:25:59"},

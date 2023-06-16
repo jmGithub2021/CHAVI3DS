@@ -1,3 +1,0 @@
-{"event":"select * from login where uid=? and pass=?","user":"admin","timestamp":"27-03-2023 17:24:46"},
-{"event":"select * from login where uid=? and pass=?","user":"admin","timestamp":"27-03-2023 17:24:56"},
-{"event":"select * from login where uid=? and pass=?","user":"admin","timestamp":"27-03-2023 17:26:00"},
