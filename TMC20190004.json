@@ -1,5 +1,27 @@
 {
 	"projectid":"TMC20190004",
-	"default":[],
-	"valuesmap":{}
+	
+	"default":[
+		{"anatomicsite":["LUNG","diagnosis"]}
+		],
+
+	"valuesmap":{
+		"sex":{"gender":[["1","2"],["MALE","FEMALE"]]},
+		"smoking":{"substance_used":[["1","2","3"],["smoking"," "," "]]},
+		"t_stage":{"tstage":[["1","2","3","4","5","6","7"],["1a","1b","1c","2a","2b","3","4"]]},
+		"n_stage":{"nstage":[["1","2","3","4"],["0","1","2","3"]]},
+		"m_stage":{"mstage":[["1","2","3","4"],["0","1a","1b","1c"]]},
+		"stage":{"overallstage":[["1","2","3","4","5","6","7","8","9"],["IA","IB","IIA","IIB","IIIA","IIIB","IIIC","IVA","IVB"]]},
+		"mediastinal_staging":{"stagingtype":[["1","2"],["pathological", "clinical"]]},
+		"differenciation":{"grade":[["1","2","3","4"],["WD", "MD", "PD", "Missing"]]},
+		"pathology_type":{"histological_type":[["1","2","3","4"],["Adenocarcinoma","Squamous","NSCLC NOS","Adenosquamous"]]},
+		"plan_details":{"technique":[["1","2","3"],["3DCRT","IMRT","TOMO"]]},	
+		"reponse_in_xray_6_weeks":{"response":[["1","2","3","4"],["Stable disease","Partial Response","Progressive disease"," "]]},
+		"response_in_ct_at_3_months":{"responsesystem":[["1","2","3","4"],["Complete response","Partial response","Progressive disease","Stable disease"]]},	
+		"death":{"status":[["1","2", "3"],["Dead","Alive", "Unknown"]]},
+		"local_recurrence":{"recurrencelocation":[["1","0"],["Local"," "]]},
+		"distant_mets":{"recurrencetype":[["1","0"],["Distant"," "]]}
+	}
+
 }
+

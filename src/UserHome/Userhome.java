@@ -22,7 +22,7 @@ public class Userhome extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("UserHome.fxml"));
         
         Scene scene = new Scene(root);
-        stage.setTitle("CHAVIRO -DICOM De-identification System");
+        stage.setTitle("DICOM Open-source De-identification System");
         stage.setScene(scene);
         stage.show();
     }

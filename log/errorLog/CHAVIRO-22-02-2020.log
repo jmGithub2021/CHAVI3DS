@@ -1,0 +1,3 @@
+{"event":"java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'TMC20190004-' for key 'PRIMARY'","user":"","timestamp":"22-02-2020 14:12:20"},
+{"event":"java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'TMC20190004-' for key 'PRIMARY'","user":"","timestamp":"22-02-2020 14:12:20"},
+{"event":"java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'TMC20190004-' for key 'PRIMARY'","user":"","timestamp":"22-02-2020 14:12:21"},

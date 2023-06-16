@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="DicomODIS.jnlp">
+  <information>
+    <title>DicomODIS</title>
+    <vendor>Surajit Kundu</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="DicomODIS.jar" size="207075" download="eager" />
+    <jar href="lib\commons-codec-1.7.jar" size="259600" download="eager" />
+    <jar href="lib\commons-csv-1.7.jar" size="45065" download="eager" />
+    <jar href="lib\commons.io_2.0.1.jar" size="170843" download="eager" />
+    <jar href="lib\controlsfx-8.20.8.jar" size="957666" download="eager" />
+    <jar href="lib\dcm4che-core-2.0.29.jar" size="402832" download="eager" />
+    <jar href="lib\json-simple-1.1.jar" size="16046" download="eager" />
+    <jar href="lib\log4j-1.2.16.jar" size="481535" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.13.jar" size="2132635" download="eager" />
+    <jar href="lib\org.apache.commons.io.jar" size="83613" download="eager" />
+    <jar href="lib\rs2xml.jar" size="166645" download="eager" />
+    <jar href="lib\slf4j-api-1.6.1.jar" size="25496" download="eager" />
+    <jar href="lib\slf4j-log4j12-1.6.1.jar" size="9753" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="DicomODIS" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="dicomdis.DICOMDIS"  name="DicomODIS" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,3 @@
+{"event":"select * from login where uid=? and pass=?","user":"sk@c.com","timestamp":"16-06-2020 18:07:08"},
+{"event":"select * from project","user":"sk@c.com","timestamp":"16-06-2020 18:07:09"},
+{"event":"select * from diseasesite order by name","user":"sk@c.com","timestamp":"16-06-2020 18:07:30"},

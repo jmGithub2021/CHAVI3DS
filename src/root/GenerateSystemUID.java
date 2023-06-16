@@ -26,6 +26,7 @@ import java.math.BigInteger;
 import java.security.MessageDigest; 
 import java.security.NoSuchAlgorithmException; 
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 
 /**
  *
@@ -291,62 +292,85 @@ public class GenerateSystemUID {
         deidentifiedDate = deidentifiedDate(originalDate,difference);
         return deidentifiedDate;
     }
-    public String deidentifiedDate(String originalDate,int difference){ //date format yyyymmdd ex. 20180123
-        String deidentifiedDate="";
-        int orgDay=0,orgMonth=0,monthCounter=0,orgTotal=0,year=0,dayCounter=0;
-        int day=0,month=0;
-        int dayList[] = new int[12];
-        int normalYear[] = {31,28,31,30,31,30,31,31,30,31,30,31};
-        int leapYear[] = {31,29,31,30,31,30,31,31,30,31,30,31};
-        //System.out.println("Parameter : "+originalDate+" : "+difference);
+    
+    public String deidentifiedDate(String originalDate, int difference){
+        int orgDay=0,orgMonth=0,year=0;
+        String modifiedDate = "";
         try{
             orgDay = Integer.parseInt(originalDate.substring(6,8));
             orgMonth = Integer.parseInt(originalDate.substring(4,6));
             year = Integer.parseInt(originalDate.substring(0,4));
-            dayList = ((year%4==0 && year%100 !=0) || year%400==0)?leapYear:normalYear;
-            for(int i=0;i<orgMonth-1;i++)
-                orgTotal +=dayList[i];
-            orgTotal += orgDay;
-            int totalDay = orgTotal+difference;
-            //System.out.println("Total Day : "+totalDay);
-            int tempTotalDay = 0;
-            int dayRemains = ((year%4==0 && year%100 !=0) || year%400==0)?(366-orgTotal):(365-orgTotal);
-            int diff = dayRemains-totalDay;
-            //System.out.println("Diff : "+diff+" : "+dayRemains+" : ");
-            if(totalDay>0 && dayRemains<difference){
-                int newYear = year+1;
-                int newDay = 31;
-                String newMonth = "01";
-                String newDate = String.valueOf(newYear)+newMonth+String.valueOf(newDay);
-                //System.out.println("First 1 : "+newYear+" : DD : "+newDate+" : "+newMonth+" : "+newDay+" : TotalDay : "+totalDay);
-                deidentifiedDate = deidentifiedDate(newDate,diff);                
-            }
-            else if(totalDay>0 && dayRemains>=difference){
-                while(totalDay>tempTotalDay){
-                    tempTotalDay += dayList[monthCounter];
-                    monthCounter++;
-                }
-                //System.out.println("Second2:  Month : "+(monthCounter)+" : Day : "+(tempTotalDay-dayList[monthCounter-1]));
-                month = monthCounter;
-                dayCounter = tempTotalDay-dayList[monthCounter-1];
-                day = totalDay-dayCounter;
-                String randDay = (day>9)?String.valueOf(day):"0"+String.valueOf(day);
-                String randMonth = (month>9)?String.valueOf(month):"0"+String.valueOf(month);
-                deidentifiedDate = String.valueOf(year)+randMonth+randDay;
-                //System.out.println("FF : "+deidentifiedDate);            
-            }
-            else{
-                int newYear = year-1;
-                int newDay = 31;
-                int newMonth = 12;
-                String newDate = String.valueOf(newYear)+String.valueOf(newMonth)+String.valueOf(newDay);
-                //System.out.println("Third 3 : "+newYear+" : DD : "+newDate+" : "+newMonth+" : "+newDay+" : TotalDay : "+totalDay);
-                deidentifiedDate = deidentifiedDate(newDate,totalDay);
-            }
-        }catch(Exception ex){System.out.println("Err0913465 : "+ex.toString());}
-        //System.out.println(originalDate +" : input/Output : "+deidentifiedDate);
-        return deidentifiedDate;
+            String day = (orgDay>9)?String.valueOf(orgDay):"0"+String.valueOf(orgDay);
+            String month = (orgMonth>9)?String.valueOf(orgMonth):"0"+String.valueOf(orgMonth);
+            String orgDate = String.valueOf(year)+"-"+month+"-"+day;
+            //System.out.print(orgDate);
+            LocalDate date = LocalDate.parse(orgDate);
+            LocalDate deDate = date.plusDays(difference);
+            modifiedDate = String.valueOf(deDate).replaceAll("\\-+","");
+            //System.out.println("Date "+date+" De-identified date is "+deDate+" : "+modifiedDate);
+            
+        }catch(Exception ex){
+            System.out.println("Err03934: deidentifiedDate()>>"+ex.toString());
+        }
+        return modifiedDate;
     }
+    
+//    public String deidentifiedDate(String originalDate,int difference){ //date format yyyymmdd ex. 20180123
+//        String deidentifiedDate="";
+//        int orgDay=0,orgMonth=0,monthCounter=0,orgTotal=0,year=0,dayCounter=0;
+//        int day=0,month=0;
+//        int dayList[] = new int[12];
+//        int normalYear[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+//        int leapYear[] = {31,29,31,30,31,30,31,31,30,31,30,31};
+//        //System.out.println("Parameter : "+originalDate+" : "+difference);
+//        try{
+//            orgDay = Integer.parseInt(originalDate.substring(6,8));
+//            orgMonth = Integer.parseInt(originalDate.substring(4,6));
+//            year = Integer.parseInt(originalDate.substring(0,4));
+//            dayList = ((year%4==0 && year%100 !=0) || year%400==0)?leapYear:normalYear;
+//            for(int i=0;i<orgMonth-1;i++)
+//                orgTotal +=dayList[i];
+//            orgTotal += orgDay;
+//            int totalDay = orgTotal+difference;
+//            //System.out.println("Total Day : "+totalDay);
+//            int tempTotalDay = 0;
+//            int dayRemains = ((year%4==0 && year%100 !=0) || year%400==0)?(366-orgTotal):(365-orgTotal);
+//            int diff = dayRemains-totalDay;
+////            System.out.println("Total Days: "+totalDay+" : Diff : "+diff+" : DayRemains "+dayRemains+" : ");
+//            if(totalDay>0 && dayRemains<difference){
+//                int newYear = year+1;
+//                int newDay = 31;
+//                String newMonth = "01";
+//                String newDate = String.valueOf(newYear)+newMonth+String.valueOf(newDay);
+////                System.out.println("First 1 : "+newYear+" : DD : "+newDate+" : "+newMonth+" : "+newDay+" : TotalDay : "+totalDay);
+//                deidentifiedDate = deidentifiedDate(newDate,diff);                
+//            }
+//            else if(totalDay>0 && dayRemains>=difference){
+//                while(totalDay>tempTotalDay){
+//                    tempTotalDay += dayList[monthCounter];
+//                    monthCounter++;
+//                }
+////                System.out.println("Second2:  Month : "+(monthCounter)+" : Day : "+(tempTotalDay-dayList[monthCounter-1]));
+//                month = monthCounter;
+//                dayCounter = tempTotalDay-dayList[monthCounter-1];
+//                day = totalDay-dayCounter;
+//                String randDay = (day>9)?String.valueOf(day):"0"+String.valueOf(day);
+//                String randMonth = (month>9)?String.valueOf(month):"0"+String.valueOf(month);
+//                deidentifiedDate = String.valueOf(year)+randMonth+randDay;
+////                System.out.println("FF : "+deidentifiedDate);            
+//            }
+//            else{
+//                int newYear = year-1;
+//                int newDay = 31;
+//                int newMonth = 12;
+//                String newDate = String.valueOf(newYear)+String.valueOf(newMonth)+String.valueOf(newDay);
+////                System.out.println("Third 3 : "+newYear+" : DD : "+newDate+" : "+newMonth+" : "+newDay+" : TotalDay : "+totalDay);
+//                deidentifiedDate = deidentifiedDate(newDate,totalDay);
+//            }
+//        }catch(Exception ex){System.out.println("Err0913465 : "+ex.toString());}
+//        System.out.println(originalDate +" : input/Output : "+deidentifiedDate);
+//        return deidentifiedDate;
+//    }
     public int getDayDiffrence(String sysPatientID) throws SQLException{
         int dayDiffrence=0;
         String sql = "select difference from studyDate_ref where SysPatientID = ?";

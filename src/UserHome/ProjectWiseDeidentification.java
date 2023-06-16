@@ -105,6 +105,7 @@ public class ProjectWiseDeidentification {
                                             //System.out.println("Day Difference: "+dayDifference);
                                         }
                                         String value = isDMYFormat(csvRecord)?sysUID.yyyyMMddTODate(sysUID.deidentifiedDate(dmyTOymd(csvRecord).replaceAll("\\-+","").replaceAll("\\/+", ""),dayDifference)):isYMDFormat(csvRecord)?sysUID.yyyyMMddTODate(sysUID.deidentifiedDate(csvRecord.replaceAll("\\-+","").replaceAll("\\/+", ""),dayDifference)):csvRecord;
+                                        //System.out.println(chaviAttributeName+" : "+csvRecord+" : "+value+" : "+isDMYFormat(csvRecord)+" : "+isYMDFormat(csvRecord)+" : "+dayDifference);
                                         String chaviValue = getConfigureValue(csvAttributeGeneric,chaviAttributeName,value).isEmpty()?value:getConfigureValue(csvAttributeGeneric,chaviAttributeName,value);                                       
 
                                         if(mappedAttribute.get(0)!=null){
@@ -115,6 +116,15 @@ public class ProjectWiseDeidentification {
                                             addIfDefault(leafJSObj,tableName);
                                             
                                             //System.out.println(csvRecords.get("mr_number")+" > "+chaviAttributeName+" : "+ js);
+                                        }
+                                        if(csvAttributeGeneric.equalsIgnoreCase("her2_status")){
+                                            JSONArray js = new JSONArray();
+                                            js.add("HER2");
+                                            js.add(tableName);
+                                            JSONArray js1 = new JSONArray();
+                                            js1.add(chaviValue);
+                                            js1.add(tableName);
+                                            leafJSObj.put("ihc_result", js1);
                                         }
                                 }
                                 if(validData != null && mappedAttribute == null){
@@ -130,7 +140,7 @@ public class ProjectWiseDeidentification {
                                     //System.out.println("Gene: "+leafJSObj);
                                 }
                                 if(validData == null && mappedAttribute == null && !unMappedAttribute.contains(csvAttributeGeneric))
-                                {
+                                {  
                                     unMappedAttribute.add(csvAttributeGeneric);
                                 }
                                 

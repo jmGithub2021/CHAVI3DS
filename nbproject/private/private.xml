@@ -3,22 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/root/MySqlCon.java</file>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/root/GenSystemUID.java</file>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/root/ManageUser.java</file>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/UserHome/UserInfo.java</file>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/root/DCMDeidentification.java</file>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/AdministratorHome/administratorhome.css</file>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/AdministratorHome/geneproteincatalog.css</file>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/login/LoginController.java</file>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/UserHome/UserIndexController.java</file>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/root/GetConfig.java</file>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/AdministratorHome/ProjectTemplateController.java</file>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/root/Crypto.java</file>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/root/MySqlConnect.java</file>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/root/PreProcessDICOM.java</file>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/root/DatabaseQuery.java</file>
-            <file>file:/C:/Users/SURAJIT/Documents/NetBeansProjects/DICOMDIS/src/root/GenerateSystemUID.java</file>
+            <file>file:/C:/Users/SURAJIT/Documents/Open-source/DICOMDIS/src/AdministratorHome/ProjectTemplateController.java</file>
+            <file>file:/C:/Users/SURAJIT/Documents/Open-source/DICOMDIS/src/UserHome/UserIndexController.java</file>
+            <file>file:/C:/Users/SURAJIT/Documents/Open-source/DICOMDIS/src/root/Crypto.java</file>
+            <file>file:/C:/Users/SURAJIT/Documents/Open-source/DICOMDIS/.git/config</file>
+            <file>file:/C:/Users/SURAJIT/Documents/Open-source/DICOMDIS/src/root/ManageUser.java</file>
+            <file>file:/C:/Users/SURAJIT/Documents/Open-source/DICOMDIS/src/UserHome/MapPatientProjectController.java</file>
+            <file>file:/C:/Users/SURAJIT/Documents/Open-source/DICOMDIS/src/UserHome/UserhomeController.java</file>
         </group>
     </open-files>
 </project-private>

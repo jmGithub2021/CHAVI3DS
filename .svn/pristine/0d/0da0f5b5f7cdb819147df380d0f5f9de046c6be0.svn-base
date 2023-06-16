@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="519.0" prefWidth="705.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdministratorHome.ProjectTemplateController">
+    <stylesheets>
+        <URL value="@projecttemplate.css" />
+    </stylesheets>
+   <children>
+      <TabPane layoutX="7.0" layoutY="40.0" prefHeight="465.0" prefWidth="691.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Diagnosis &amp; Profile">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="6.0" text="Diagnosis">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane fx:id="diagnosisTable" layoutX="14.0" layoutY="23.0" prefHeight="26.0" prefWidth="642.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="80.0" text="Anatomic site">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="diagnosis_anatomicsite" mnemonicParsing="false" />
+                              <CheckBox fx:id="diagnosis_laterality" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label text="Laterality" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="diagnosis_pathology" mnemonicParsing="false" GridPane.columnIndex="2" />
+                              <Label text="Pathology" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="diagnosis_diagnosis_date" mnemonicParsing="false" GridPane.columnIndex="3" />
+                              <Label text="Diagnosis date" GridPane.columnIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="diagnosis_diagnosis_complete" mnemonicParsing="false" GridPane.columnIndex="4" />
+                              <Label text="Diagnosis complete" GridPane.columnIndex="4">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="diagnosis_recurence" mnemonicParsing="false" GridPane.columnIndex="5" />
+                              <Label text="Recurence" GridPane.columnIndex="5">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="127.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="10.0" prefWidth="85.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <Label layoutX="14.0" layoutY="49.0" text="IHC profile">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="66.0">
+                           <children>
+                              <CheckBox fx:id="ihcprofile_protein_tested" mnemonicParsing="false" />
+                              <Label text="Protein tested">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="ihcprofile_ihc_result" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label text="IHC result" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <Label layoutX="14.0" layoutY="96.0" text="Fish profile">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="15.0" layoutY="113.0" prefHeight="32.0" prefWidth="463.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="158.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="153.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox fx:id="fishprofile_gene_tested" mnemonicParsing="false" />
+                              <Label text="Gene tested">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="fishprofile_type_genetic_abnormality" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label prefHeight="17.0" prefWidth="139.0" text="Type genetic abnormality" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="fishprofile_fish_result" mnemonicParsing="false" GridPane.columnIndex="2" />
+                              <Label text="Fish result" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <Label layoutX="15.0" layoutY="145.0" text="Mutation profile">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="162.0" prefHeight="31.0" prefWidth="651.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox fx:id="mutationprofile_gene_tested" mnemonicParsing="false" />
+                              <Label text="Gene tested">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="mutationprofile_type_mutation" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label text="Type mutation" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" />
+                              <Label text="Mutation result" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="mutationprofile_is_pathogenic" mnemonicParsing="false" GridPane.columnIndex="3" />
+                              <Label text="Is pathogenic" GridPane.columnIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <Label layoutX="14.0" layoutY="193.0" text="Expression profile">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="210.0" prefHeight="32.0" prefWidth="381.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox fx:id="expressionprofile_gene_tested" mnemonicParsing="false" />
+                              <Label text="Gene tested">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="expressionprofile_expression_result" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label text="Expression result" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <Label layoutX="15.0" layoutY="242.0" text="Epigenetic profile">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="15.0" layoutY="259.0" prefHeight="29.0" prefWidth="599.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox fx:id="epigeneticprofile_gene_tested" mnemonicParsing="false" />
+                              <Label text="Gene tested">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="epigeneticprofile_type_epigenetic_abnotmality" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label text="Type epigenetic abnormality" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="epigeneticprofile_epigenetic_result" mnemonicParsing="false" GridPane.columnIndex="2" />
+                              <Label text="Epigenetic result" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Tumor Details">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="6.0" text="Tumor Description">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="23.0" prefHeight="26.0" prefWidth="642.0">
+                           <children>
+                              <CheckBox fx:id="tumordescription_tumor_maxsize" mnemonicParsing="false" />
+                              <Label text="Tumor maxsize">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="tumordescription_tumor_maxsize_unit" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label text="Tumor maxsize unit" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="tumordescription_tumor_site" mnemonicParsing="false" GridPane.columnIndex="2" />
+                              <Label text="Tumor site" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="tumordescription_tumor_focality" mnemonicParsing="false" GridPane.columnIndex="3" />
+                              <Label text="Tumor focality" GridPane.columnIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="tumordescription_extent" mnemonicParsing="false" GridPane.columnIndex="4" />
+                              <Label text="Extent" GridPane.columnIndex="4">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="tumordescription_perforation" mnemonicParsing="false" text="Perforation" GridPane.columnIndex="5" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <Label layoutX="14.0" layoutY="49.0" text="Tumor pathology">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="66.0" prefHeight="42.0" prefWidth="642.0">
+                           <children>
+                              <CheckBox fx:id="tumorpathology_histological_type" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="95.0" text="Histological type">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="tumorpathology_grade" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label text="Grade" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="tumorpathology_necrosis" mnemonicParsing="false" GridPane.columnIndex="2" />
+                              <Label text="Necrosis" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="tumorpathology_angioinvasion" mnemonicParsing="false" GridPane.columnIndex="3" />
+                              <Label text="Angio invasion" GridPane.columnIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="tumorpathology_tumor_invasion" mnemonicParsing="false" GridPane.columnIndex="4" />
+                              <Label text="Lymphatic invasion" GridPane.columnIndex="4">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="tumorpathology_perineural_invasion" mnemonicParsing="false" GridPane.columnIndex="5" />
+                              <Label text="Perineural invasion" GridPane.columnIndex="5">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="tumorpathology_tumor_depostis" mnemonicParsing="false" GridPane.rowIndex="1" />
+                              <Label text="Tumor deposits" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="tumorpathology_treatment_effect" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label prefHeight="17.0" prefWidth="98.0" text="Treatment effect" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="110.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="113.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="72.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="10.0" prefWidth="102.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="164.0" minWidth="10.0" prefWidth="122.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="122.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <Label layoutX="14.0" layoutY="108.0" text="Tumor margin">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="125.0" prefHeight="26.0" prefWidth="642.0">
+                           <children>
+                              <CheckBox fx:id="tumormargin_margin_name" mnemonicParsing="false" />
+                              <Label text="Margin name">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="tumormargin_margin_involved" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label text="Margin Involved" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="tumormargin_margin_distance" mnemonicParsing="false" GridPane.columnIndex="2" />
+                              <Label text="Margin distance" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="tumormargin_margin_distance_unit" mnemonicParsing="false" GridPane.columnIndex="3" />
+                              <Label text="Margin distance unit" GridPane.columnIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="140.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.0" minWidth="10.0" prefWidth="74.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Stages">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="6.0" text="Stage">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="23.0" prefHeight="50.0" prefWidth="642.0">
+                           <children>
+                              <CheckBox fx:id="stageinformation_stagingtype" mnemonicParsing="false" />
+                              <Label text="Staging type">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="stageinformation_recurrentdisease" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label text="Recurrent disease" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="stageinformation_neoadjuvanttherpygiven" mnemonicParsing="false" GridPane.columnIndex="2" />
+                              <Label text="Neo adjuvanttherapy given" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="stageinformation_stagingsystem" mnemonicParsing="false" GridPane.columnIndex="3" />
+                              <Label text="Staging system" GridPane.columnIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="stageinformation_tstage" mnemonicParsing="false" GridPane.columnIndex="4" />
+                              <Label text="Tstage" GridPane.columnIndex="4">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="stageinformation_nstage" mnemonicParsing="false" GridPane.columnIndex="5" />
+                              <Label text="Nstage" GridPane.columnIndex="5">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="stageinformation_mstage" mnemonicParsing="false" GridPane.rowIndex="1" />
+                              <Label text="Mstage" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="stageinformation_overallstage" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label text="Overall stage" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="120.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="170.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="103.0" minWidth="10.0" prefWidth="103.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="69.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="74.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Treatment Details">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Treatment Intent">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="31.0" prefHeight="35.0" prefWidth="323.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox fx:id="treatmentintent_treatmentintentvalue" mnemonicParsing="false" />
+                              <Label text="Treatment intent value">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <Label layoutX="14.0" layoutY="66.0" text="Radiotherapy">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="83.0" prefHeight="90.0" prefWidth="651.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="160.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="150.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="107.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox fx:id="radiotherapy_given" mnemonicParsing="false" />
+                              <Label text="Given">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="radiotherapy_fraction" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label text="Fraction" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="radiotherapy_startdate" mnemonicParsing="false" GridPane.columnIndex="2" />
+                              <Label text="Start date" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="radiotherapy_enddate" mnemonicParsing="false" GridPane.columnIndex="3" />
+                              <Label text="End date" GridPane.columnIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="radiotherapy_rt_site" mnemonicParsing="false" GridPane.columnIndex="4" />
+                              <Label text="RT site" GridPane.columnIndex="4">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="radiotherapy_rt_side" mnemonicParsing="false" GridPane.rowIndex="1" />
+                              <Label text="RT side" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="radiotherapy_rt_dose" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label text="RT dose" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="radiotherapy_rt_treatmentintent_setting" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Label text="Treatmentintent setting" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="radiotherapy_equipment" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <Label text="Equipment" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="radiotherapy_technique" mnemonicParsing="false" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                              <Label text="Technique" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="radiotherapy_is_reradiation" mnemonicParsing="false" GridPane.rowIndex="2" />
+                              <Label text="Is reradiation" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="radiotherapy_concurrentchemotherapy" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label text="Concurrent chemotherapy" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="radiotherapy_concurrentmedication" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Label text="Concurrent medication" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <Label layoutX="14.0" layoutY="173.0" text="Surgery">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="190.0" prefHeight="61.0" prefWidth="653.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox fx:id="surgery_surgerydetails" mnemonicParsing="false" />
+                              <Label text="Surgery details">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="surgery_surgeryvalue" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label text="Surgery value" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="surgery_sidesurgery" mnemonicParsing="false" GridPane.columnIndex="2" />
+                              <Label text="Side surgery" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="surgery_sentinel_node" mnemonicParsing="false" GridPane.columnIndex="3" />
+                              <Label text="Sentinel node" GridPane.columnIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="surgery_reconstruction" mnemonicParsing="false" GridPane.columnIndex="4" />
+                              <Label text="Reconstruction" GridPane.columnIndex="4">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="surgery_node_dissection" mnemonicParsing="false" GridPane.rowIndex="1" />
+                              <Label text="Node dissection" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="surgery_min_invasive" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label text="Min invasive" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="surgery_intraop_guidance" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Label text="Intraop guidance" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="surgery_extent_resection" mnemonicParsing="false" text="Extent resection" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <CheckBox fx:id="surgery_surgerydate" mnemonicParsing="false" text="Surgery date" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                        <Label layoutX="14.0" layoutY="251.0" text="Chemotherapy">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="268.0" prefHeight="27.0" prefWidth="656.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox fx:id="chemotherapy_given" mnemonicParsing="false" text="Given" />
+                              <CheckBox fx:id="chemotherapy_setting" mnemonicParsing="false" text="Setting" GridPane.columnIndex="1" />
+                              <CheckBox fx:id="chemotherapy_cycle" mnemonicParsing="false" text="Cycle" GridPane.columnIndex="2" />
+                              <CheckBox fx:id="chemotherapy_regimen" mnemonicParsing="false" text="Regimen" GridPane.columnIndex="3" />
+                              <CheckBox fx:id="chemotherapy_start_date" mnemonicParsing="false" text="Start date" GridPane.columnIndex="4" />
+                              <CheckBox fx:id="chemotherapy_end_date" mnemonicParsing="false" text="End date" GridPane.columnIndex="5" />
+                           </children>
+                        </GridPane>
+                        <Label layoutX="14.0" layoutY="295.0" text="Immunotherapy">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="12.0" layoutY="312.0" prefHeight="28.0" prefWidth="654.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox fx:id="immunotherapy_given" mnemonicParsing="false" text="Given" />
+                              <CheckBox fx:id="immunotherapy_setting" mnemonicParsing="false" text="Setting" GridPane.columnIndex="1" />
+                              <CheckBox fx:id="immunotherapy_immunoth_type" mnemonicParsing="false" text="Type" GridPane.columnIndex="2" />
+                              <CheckBox fx:id="immunotherapy_regimen" mnemonicParsing="false" text="Regimen" GridPane.columnIndex="3" />
+                              <CheckBox fx:id="immunotherapy_startdate" mnemonicParsing="false" text="Start date" GridPane.columnIndex="4" />
+                              <CheckBox fx:id="immunotherapy_enddate" mnemonicParsing="false" text="End date" GridPane.columnIndex="5" />
+                           </children>
+                        </GridPane>
+                        <Label layoutX="14.0" layoutY="340.0" text="Hormonetherapy">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="13.0" layoutY="357.0" prefHeight="25.0" prefWidth="676.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox fx:id="hormonetherapy_given" mnemonicParsing="false" text="Given" />
+                              <CheckBox fx:id="hormonetherapy_setting" mnemonicParsing="false" text="Setting" GridPane.columnIndex="1" />
+                              <CheckBox fx:id="hormonetherapy_hormonetherapytype" mnemonicParsing="false" text="Type" GridPane.columnIndex="2" />
+                              <CheckBox fx:id="hormonetherapy_regimen" mnemonicParsing="false" text="Regimen" GridPane.columnIndex="3" />
+                              <CheckBox fx:id="hormonetherapy_startdate" mnemonicParsing="false" text="Start date" GridPane.columnIndex="4" />
+                              <CheckBox fx:id="hormonetherapy_enddate" mnemonicParsing="false" text="End date" GridPane.columnIndex="5" />
+                              <CheckBox fx:id="hormonetherapy_drugname" mnemonicParsing="false" text="Drug name" GridPane.columnIndex="6" />
+                           </children>
+                        </GridPane>
+                        <Label layoutX="14.0" layoutY="382.0" text="Targeted therapy">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="12.0" layoutY="399.0" prefHeight="30.0" prefWidth="691.0">
+                           <children>
+                              <CheckBox fx:id="targetedtherapy_given" mnemonicParsing="false" text="Given" />
+                              <CheckBox fx:id="targetedtherapy_setting" mnemonicParsing="false" text="Setting" GridPane.columnIndex="1" />
+                              <CheckBox fx:id="targetedtherapy_targeted_therapy" mnemonicParsing="false" text="Value" GridPane.columnIndex="2" />
+                              <CheckBox fx:id="targetedtherapy_regimen_targeted" mnemonicParsing="false" text="Regimen" GridPane.columnIndex="3" />
+                              <CheckBox fx:id="targetedtherapy_startdate" mnemonicParsing="false" text="Start date" GridPane.columnIndex="4" />
+                              <CheckBox fx:id="targetedtherapy_enddate" mnemonicParsing="false" text="End date" GridPane.columnIndex="5" />
+                              <CheckBox fx:id="targetedtherapy_cycles" mnemonicParsing="false" text="Cycles" GridPane.columnIndex="6" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Imaging Data">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Imaging data">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="13.0" layoutY="31.0" prefHeight="36.0" prefWidth="352.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox fx:id="imagingdata_imagetype" mnemonicParsing="false" />
+                              <Label text="Image type">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="imagingdata_imagedate" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label text="Image date" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <Label layoutX="14.0" layoutY="67.0" text="Imaging features">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="84.0" prefHeight="58.0" prefWidth="648.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="156.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.0" minWidth="10.0" prefWidth="110.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox fx:id="imagingfeature_imaging_timing" mnemonicParsing="false" />
+                              <Label text="Imaging timing">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="imagingfeature_site_abnormality" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label text="Site abnormality" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="imagingfeature_enhancement" mnemonicParsing="false" GridPane.columnIndex="2" />
+                              <Label text="Enhancement" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="imagingfeature_edema" mnemonicParsing="false" GridPane.columnIndex="3" />
+                              <Label text="Edema" GridPane.columnIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="imagingfeature_svz_involvement" mnemonicParsing="false" GridPane.columnIndex="4" />
+                              <Label text="SVZ involvement" GridPane.columnIndex="4">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="imagingfeature_neuraxis_spread" mnemonicParsing="false" GridPane.rowIndex="1" />
+                              <Label text="Neuraxis spread" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="imagingfeature_disease_status_img" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label text="Disease status img" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="imagingfeature_disease_progression_type" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Label text="Disease progression type" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Recurrence">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Recurrence">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="31.0" prefHeight="90.0" prefWidth="335.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox fx:id="recurrence_recurrencetype" mnemonicParsing="false" />
+                              <Label text="Recurrence type">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="recurrence_recurremcedate" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label text="Recurrence date" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Nodal Status">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="6.0" text="Nodal status">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="23.0" prefHeight="26.0" prefWidth="546.0">
+                           <children>
+                              <CheckBox fx:id="nodalstatus_nodes_examined" mnemonicParsing="false" />
+                              <Label text="Nodes examined">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="nodalstatus_nodes_positive" mnemonicParsing="false" GridPane.columnIndex="1" />
+                              <Label text="Nodes positive" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="nodalstatus_node_level" mnemonicParsing="false" GridPane.columnIndex="2" />
+                              <Label text="Node level" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <CheckBox fx:id="nodalstatus_extra_nodal_extension" mnemonicParsing="false" GridPane.columnIndex="3" />
+                              <Label text="Extra nodal extension" GridPane.columnIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Others">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="saveAttributes" layoutX="519.0" layoutY="14.0" mnemonicParsing="false" onAction="#saveAttributesAction" text="Add Field" />
+                        <TextField fx:id="inputCSVAttr" layoutX="14.0" layoutY="14.0" promptText="Input Field name" />
+                        <TextField fx:id="chaviAttr" layoutX="177.0" layoutY="14.0" promptText="CHAVI field name" />
+                        <TextField fx:id="associatedTable" layoutX="346.0" layoutY="14.0" promptText="Associated with" />
+                        <AnchorPane fx:id="displayAttr" layoutX="4.0" layoutY="46.0" prefHeight="390.0" prefWidth="684.0">
+                           <children>
+                              <TilePane fx:id="otherAttributeList" layoutX="5.0" prefHeight="388.0" prefWidth="674.0" />
+                           </children></AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ComboBox fx:id="projectList" layoutX="14.0" layoutY="8.0" prefWidth="150.0" promptText="Select project" />
+      <Button fx:id="saveTemplate" layoutX="177.0" layoutY="8.0" mnemonicParsing="false" onAction="#saveTemplateAction" prefHeight="25.0" prefWidth="108.0" text="Save" />
+      <Button fx:id="csvTemplate" layoutX="438.0" layoutY="8.0" mnemonicParsing="false" text="Choose Project Template" />
+      <Button fx:id="csvCHAVIMap" layoutX="606.0" layoutY="8.0" mnemonicParsing="false" text="Map" />
+   </children>
+</AnchorPane>

@@ -125,57 +125,57 @@ public class UserIndexController implements Initializable {
         else
             return false;
     }    
-    @FXML
-    private void chooseFolderAction(ActionEvent event){        
-        DirectoryChooser directoryChooser = new DirectoryChooser();
-        File selectedDirectory = directoryChooser.showDialog(null);
-
-    /*    if(selectedDirectory == null){
-            //No Directory selected
-       }else{
-            System.out.println(selectedDirectory.getAbsolutePath());
-            String originalDCMPath="";
-            originalDCMPath = selectedDirectory.getAbsolutePath();
-            File folder = new File(selectedDirectory.getAbsolutePath());
-            File[] listOfFiles = folder.listFiles();
-            int noOfFiles = listOfFiles.length;
-            System.out.println(noOfFiles);
-            for (int i = 0; i < noOfFiles; i++){
-                File swap = null;
-                File folder1 = new File(originalDCMPath);
-                File[] listOfFiles1 = folder1.listFiles();
-                String modality="",studyUID="",frameofreferencedUID="";
-                if (listOfFiles[i].isFile() && isDCMFile(listOfFiles[i].getName())) {
-                    try{
-                        DicomInputStream dis = new DicomInputStream(listOfFiles[i]);
-                        DicomObject DCMObj = dis.readDicomObject();
-                        modality = DCMObj.getString(Tag.Modality);
-                        studyUID = DCMObj.getString(Tag.StudyInstanceUID);
-                        frameofreferencedUID = DCMObj.getString(Tag.FrameOfReferenceUID);
-                    }catch(Exception ex){} 
-                    if(modality.equalsIgnoreCase("RTDOSE")){
-                        swap = listOfFiles[i];
-                        listOfFiles[i] = listOfFiles[noOfFiles-1];
-                        listOfFiles[noOfFiles-1] = swap;
-                    }
-                    if(modality.equalsIgnoreCase("RTPLAN")){
-                        swap = listOfFiles[i];
-                        listOfFiles[i] = listOfFiles[noOfFiles-2];
-                        listOfFiles[noOfFiles-2] = swap;
-                    }
-                    if(modality.equalsIgnoreCase("RTSTRUCT")){
-                        swap = listOfFiles[i];
-                        listOfFiles[i] = listOfFiles[noOfFiles-3];
-                        listOfFiles[noOfFiles-3] = swap;
-                    }
-                } else if (listOfFiles[i].isDirectory()) {
-                  System.out.println("Directory are " + listOfFiles[i].getName());
-                } 
-            }
-        
-        
-       } */      
-    }
+//    @FXML
+//    private void chooseFolderAction(ActionEvent event){        
+//        DirectoryChooser directoryChooser = new DirectoryChooser();
+//        File selectedDirectory = directoryChooser.showDialog(null);
+//
+//    /*    if(selectedDirectory == null){
+//            //No Directory selected
+//       }else{
+//            System.out.println(selectedDirectory.getAbsolutePath());
+//            String originalDCMPath="";
+//            originalDCMPath = selectedDirectory.getAbsolutePath();
+//            File folder = new File(selectedDirectory.getAbsolutePath());
+//            File[] listOfFiles = folder.listFiles();
+//            int noOfFiles = listOfFiles.length;
+//            System.out.println(noOfFiles);
+//            for (int i = 0; i < noOfFiles; i++){
+//                File swap = null;
+//                File folder1 = new File(originalDCMPath);
+//                File[] listOfFiles1 = folder1.listFiles();
+//                String modality="",studyUID="",frameofreferencedUID="";
+//                if (listOfFiles[i].isFile() && isDCMFile(listOfFiles[i].getName())) {
+//                    try{
+//                        DicomInputStream dis = new DicomInputStream(listOfFiles[i]);
+//                        DicomObject DCMObj = dis.readDicomObject();
+//                        modality = DCMObj.getString(Tag.Modality);
+//                        studyUID = DCMObj.getString(Tag.StudyInstanceUID);
+//                        frameofreferencedUID = DCMObj.getString(Tag.FrameOfReferenceUID);
+//                    }catch(Exception ex){} 
+//                    if(modality.equalsIgnoreCase("RTDOSE")){
+//                        swap = listOfFiles[i];
+//                        listOfFiles[i] = listOfFiles[noOfFiles-1];
+//                        listOfFiles[noOfFiles-1] = swap;
+//                    }
+//                    if(modality.equalsIgnoreCase("RTPLAN")){
+//                        swap = listOfFiles[i];
+//                        listOfFiles[i] = listOfFiles[noOfFiles-2];
+//                        listOfFiles[noOfFiles-2] = swap;
+//                    }
+//                    if(modality.equalsIgnoreCase("RTSTRUCT")){
+//                        swap = listOfFiles[i];
+//                        listOfFiles[i] = listOfFiles[noOfFiles-3];
+//                        listOfFiles[noOfFiles-3] = swap;
+//                    }
+//                } else if (listOfFiles[i].isDirectory()) {
+//                  System.out.println("Directory are " + listOfFiles[i].getName());
+//                } 
+//            }
+//        
+//        
+//       } */      
+//    }
     @FXML
     private void setDeidentificationAction(ActionEvent event){
         selectedImageType = imageType.getValue();

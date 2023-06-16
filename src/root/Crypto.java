@@ -71,12 +71,15 @@ public class Crypto {
             //System.out.println(decryptString("17dwsUiNttBxLmb78fSDYg=="));
              //System.out.println("18/002038: "+ decryptString("5GdhCILRM7zd0XPWxTrCaK3z5D2aq7v7VwqiwtiNaoM="));
              //System.out.println("16/002288: "+ decryptString("5GdhCILRM7zd0XPWxTrCaPUXIuc+AciGFnZ4X2GKGHg="));
-              // System.out.println("18/002277 "+decryptString("WuZMwE6hy9tauQxAp0VPhmgn+vYAlVCM/KrcPdY97GM="));
+               System.out.println("18/002277 "+decryptString("T7gN3J/juJaRkEDmG+l6CHr5AO4xVkOvOlnfIsxy4ko="));
               // System.out.println("18/002404 "+encryptString("2013032708202000004"));
-               
-               System.out.println("18/004273 =>> "+decryptString("Z3Zzfo9cobyk3RPyawTfplfNP5bf0asgChPwmd0/A+w="));
-               System.out.println("19_004135 =>> "+decryptString("PVLCk4SJ/Ubpwhop3fpFPGgn+vYAlVCM/KrcPdY97GM="));
-               System.out.println("19_007325 =>> "+decryptString("FlRadV3vek89vJ5g2gpi1VWt1S9hDtxKeFgQOUFpJdE="));
+                
+                //System.out.println("8HmWSf+XY/0ea5B4WWwUYa3z5D2aq7v7VwqiwtiNaoM= : " +decryptString(" 8HmWSf+XY/0ea5B4WWwUYa3z5D2aq7v7VwqiwtiNaoM="));
+                //System.out.println("2013030303202000000 :" +encryptString("2013030303202000000"));
+//              System.out.println("2013030507202100004 : "+encryptString("2013030507202100004"));
+//              System.out.println("2013030707202100001 : "+encryptString("2013030707202100001"));
+//              System.out.println("2013030707202100002 : "+encryptString("2013030707202100002"));
+//              System.out.println("2013030707202100003 : "+encryptString("2013030707202100003"));
               // System.out.println("Pass: "+decryptString("xixjm4WhSMFQVBkaVl59oA=="));
              
         }catch(Exception ex){

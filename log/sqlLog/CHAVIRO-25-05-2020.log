@@ -1,0 +1,1 @@
+{"event":"select * from login where uid=? and pass=?","user":"admin","timestamp":"25-05-2020 21:03:04"},

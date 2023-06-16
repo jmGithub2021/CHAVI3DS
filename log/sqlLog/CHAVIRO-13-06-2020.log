@@ -1,0 +1,5 @@
+{"event":"select * from login where uid=? and pass=?","user":"sk@c.com","timestamp":"13-06-2020 15:58:13"},
+{"event":"select * from project","user":"sk@c.com","timestamp":"13-06-2020 15:58:14"},
+{"event":"select * from diseasesite order by name","user":"sk@c.com","timestamp":"13-06-2020 15:59:30"},
+{"event":"select * from patientid_map limit 0,2000","user":"sk@c.com","timestamp":"13-06-2020 16:05:29"},
+{"event":"select * from project","user":"sk@c.com","timestamp":"13-06-2020 16:05:29"},

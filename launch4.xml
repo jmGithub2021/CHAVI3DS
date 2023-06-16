@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\SURAJIT\Documents\Open-source\DICOMDIS\dist\DicomODIS.jar</jar>
+  <outfile>C:\Users\SURAJIT\Documents\Open-source\DICOMDIS\exe\CHAVI.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon></icon>
+  <classPath>
+    <mainClass>dicomdis.DICOMDIS</mainClass>
+    <cp>lib/commons-codec-1.7.jar</cp>
+    <cp>lib/commons-csv-1.7.jar</cp>
+    <cp>lib/commons.io_2.0.1.jar</cp>
+    <cp>lib/controlsfx-8.20.8.jar</cp>
+    <cp>lib/dcm4che-core-2.0.29.jar</cp>
+    <cp>lib/json-simple-1.1.jar</cp>
+    <cp>lib/log4j-1.2.16.jar</cp>
+    <cp>lib/mysql-connector-java-8.0.13.jar</cp>
+    <cp>lib/org.apache.commons.io.jar</cp>
+    <cp>lib/rs2xml.jar</cp>
+    <cp>lib/slf4j-api-1.6.1.jar</cp>
+    <cp>lib/slf4j-log4j12-1.6.1.jar</cp>
+  </classPath>
+  <jre>
+    <path>%JAVA_HOME%;%PATH%</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+</launch4jConfig>

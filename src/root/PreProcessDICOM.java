@@ -272,7 +272,7 @@ public class PreProcessDICOM {
                     UserhomeController.totalDeidentified = totalDeidentified;
                 }
                 
-                upDCMFile.delete();
+                //upDCMFile.delete();
             }
             catch(Exception ex){System.out.println(upDCMFile.getName()+"Error0456578 : "+ex.toString());}   
     }

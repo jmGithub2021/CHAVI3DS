@@ -1,0 +1,8 @@
+{"event":"select * from login where uid=? and pass=?","user":"admin","timestamp":"26-12-2019 16:46:01"},
+{"event":"select * from project","user":"admin","timestamp":"26-12-2019 16:46:15"},
+{"event":"select attributename from projectTemplateOtherAttribute","user":"admin","timestamp":"26-12-2019 16:46:15"},
+{"event":"select * from project limit 0,400","user":"admin","timestamp":"26-12-2019 16:46:02"},
+{"event":"select * from project limit 0,400","user":"admin","timestamp":"26-12-2019 16:46:02"},
+{"event":"select * from project limit 0,400","user":"admin","timestamp":"26-12-2019 16:46:02"},
+{"event":"select * from project","user":"admin","timestamp":"26-12-2019 16:46:52"},
+{"event":"select attributename from projectTemplateOtherAttribute","user":"admin","timestamp":"26-12-2019 16:46:52"},
