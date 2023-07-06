@@ -136,6 +136,7 @@ Analysis of radiological data, particularly in radiation oncology, has many chal
 
 <!-- GETTING STARTED -->
 ## Getting Started
+[![IMAGE ALT TEXT HERE](https://i.ytimg.com/vi/TF3nGqsIrHk/sddefault.jpg)](https://www.youtube.com/watch?v=TF3nGqsIrHk&ab_channel=CHAVI)
 
 
 ### Requirements
