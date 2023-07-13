@@ -51,8 +51,8 @@ Achari, Indranil Mallick, Partha Pratim Das, Moses Arunsingh, Tapesh Bhattachary
 Soumendranath Ray
 </div> -->
 <br/>
-<div align="align">
-<img src="images/IITKGP_TMC.png" width="100%" height="280">
+<div align="center">
+<img src="images/IITKGP_TMC.png" height="280">
 </div>
 
 <br>
