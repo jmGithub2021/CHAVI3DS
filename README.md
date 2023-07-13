@@ -106,8 +106,7 @@ Soumendranath Ray
 
 [![Product Name Screen Shot][product-screenshot]](https://chavi.ai)
 
-CompreHensive ArchiVe of Imaging (CHAVI) DICOM Data De-identification System (CHAVID3S) version 1.0 [1] has been developed for the de-identification of radiological DICOM images and associates radiation therapy (RT) planning (RTPLAN), structure (RTSTRUCT), and dose (RTDOSE) data. It is a standalone application that is built using Java. The graphical user interface (GUI) is designed using JavaFX. The CHAVID3S uses a MySQL relational database management system (RDBMS) to store the data, which keeps tracking the references of the data in encrypted form for re-identification. This system is also capable of de-identifying the clinical data where the de-identification is  
-defined in the context of research goals and objectives [2].
+CompreHensive ArchiVe of Imaging (CHAVI) DICOM Data De-identification System (CHAVID3S) version 1.0 [1] has been developed for the de-identification of radiological DICOM images and associated radiation therapy (RT) planning (RTPLAN), structure (RTSTRUCT), and dose (RTDOSE) data. It is a standalone application that is built using Java. The graphical user interface (GUI) is designed using JavaFX. The CHAVID3S uses a relational database management system (RDBMS) to store the data, which keeps tracking the references of the data in encrypted form for re-identification. The version 1.0 uses MySQL RDBMS at the backend. This system is also capable of de-identifying the clinical data [2].
 
 
 ### Prerequisite terms and definition
@@ -125,7 +124,7 @@ In DICOM, a radiotherapy plan (RTPLAN) object contains geometric and dosimetric 
 The radiotherapy dose (RTDOSE) object of the DICOM standard is used for transferring the dose distributions calculated by radiation therapy TPS. The dose distributions in an RTDOSE may be presented as 2D or 3D grids.
 
 #### De-identification
-De-identification is a process of detecting the patients’ personal identifiers and removing or modifying those  identifiers from the data
+De-identification is a process of detecting the patients’ personal identifiers and removing or modifying those  identifiers from the data.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -146,7 +145,7 @@ Analysis of radiological data, particularly in radiation oncology, has many chal
 * [![dcm4che][dcm4che]][dcm4che-url]
 * [![NetBeans][Netbeans]][Netbeans-url]
 
-The CHAVID3S can be executed through both Windows and Linux operating systems. It is  recommended to run the de-identification system using Windows operating system.
+The CHAVID3S can be installed and run on both Windows and Linux operating system.
 
 <table>
 <thead>
@@ -222,26 +221,28 @@ The CHAVID3S can be executed through both Windows and Linux operating systems. I
 
 ### Installation
 
-_Below is the step by step process that instruct the audience on installing and setting up CHAVID3S app._
+_Below is the step by step process that instruct the users on installing and setting up CHAVID3S app._
 
-<b>Step 1.</b> Clone the CHAVID3S from GitHub repository. 
+<b>Step 1.</b> Download and install the requirements for running CHAVID3S. The requirements are JDK 1.8 or higher, MySQL 5.7 or higher, Netbeans 8.2 or higher, and dcm4che library.
+
+<b>Step 2.</b> Clone the CHAVID3S from GitHub repository. 
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/jmGithub2021/CHAVI3DS.git
    ```
-<b>Step 2.</b> Create a database in MySQL and import the `chavid3s.sql` file.
+<b>Step 3.</b> Create a database in MySQL and import the `chavid3s_schema.sql`, `Anatomic_Site.sql`, and `Administrator_loginData.sql` file.
    ```sh
    create database chaviro
    mysql -u username -p chaviro < chavid3s.sql
    ```
-<b>Step 3.</b> Configure the `config.json` file. Kindly refer to above Table for more details. 
+<b>Step 4.</b> Configure the `config.json` file. Kindly refer to above Table for more details. 
    ```
    Note: Please generate the encryption string for your MySQL database password. The default encryption password is generated for string ``1234".
    ```
-<b>Step 4.</b> Open the project using Netbeans IDE.
+<b>Step 5.</b> Open the project using Netbeans IDE.
 
-<b>Step 5.</b> Apply `Clean and build` project.
+<b>Step 6.</b> Apply `Clean and build` project.
 
-<b>Step 6.</b> Click on `Run` button to execute the application.
+<b>Step 7.</b> Click on `Run` button to execute the application.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
