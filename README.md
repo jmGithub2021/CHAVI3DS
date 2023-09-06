@@ -362,18 +362,18 @@ Distributed under Apache-2.0. See `LICENSE.txt` for more information.
 
 [[1] S. Kundu, S. Chakraborty, S. Chatterjee, S. Das, R. B. Achari, J. Mukhopadhyay, P. P. Das, I. Mallick,
 M. Arunsingh, T. Bhattacharyyaa et al., “De-identification of radiomics data retaining longitudinal temporal
-information,” Journal of medical systems, vol. 44, no. 5, pp. 1–15, 2020.](https://github.com)
+information,” Journal of medical systems, vol. 44, no. 5, pp. 1–15, 2020.](https://link.springer.com/article/10.1007/s10916-020-01563-0)
 
 [[2] S. Kundu, S. Chakraborty, J. Mukhopadhyay, S. Das, S. Chatterjee, R. Basu Achari, I. Mallick, P. Pratim Das,
 M. Arunsingh, T. Bhattacharyya et al., “Research goal-driven data model and harmonization for de-identifying
-patient data in radiomics,” Journal of Digital Imaging, vol. 34, no. 4, pp. 986–1004, 2021.](https://github.com)
+patient data in radiomics,” Journal of Digital Imaging, vol. 34, no. 4, pp. 986–1004, 2021.](https://link.springer.com/article/10.1007/s10278-021-00476-9)
 
 [[3] P. Mildenberger, M. Eichelberg, and E. Martin, “Introduction to the dicom standard,” European radiology,
-vol. 12, no. 4, pp. 920–927, 2002.](https://github.com)
+vol. 12, no. 4, pp. 920–927, 2002.](https://link.springer.com/article/10.1007/s003300101100)
 
 [[4] P. Lambin, E. Rios-Velazquez, R. Leijenaar, S. Carvalho, R. G. Van Stiphout, P. Granton, C. M. Zegers,
 R. Gillies, R. Boellard, A. Dekker et al., “Radiomics: extracting more information from medical images using
-advanced feature analysis,” European journal of cancer, vol. 48, no. 4, pp. 441–446, 2012.](https://github.com)
+advanced feature analysis,” European journal of cancer, vol. 48, no. 4, pp. 441–446, 2012.](https://www.sciencedirect.com/science/article/pii/S0959804911009993?via%3Dihub)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
