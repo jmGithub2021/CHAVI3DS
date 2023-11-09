@@ -232,7 +232,9 @@ _Below is the step by step process that instruct the users on installing and set
 <b>Step 3.</b> Create a database in MySQL and import the `chavid3s_schema.sql`, `Anatomic_Site.sql`, and `Administrator_loginData.sql` file.
    ```sh
    create database chaviro
-   mysql -u username -p chaviro < chavid3s.sql
+   mysql -u username -p chaviro < chavid3s_schema.sql
+   mysql -u username -p chaviro < Anatomic_Site.sql
+   mysql -u username -p chaviro < Administrator_loginData.sql
    ```
 <b>Step 4.</b> Configure the `config.json` file. Kindly refer to above Table for more details. 
    ```
